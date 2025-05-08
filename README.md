@@ -1,7 +1,8 @@
-Medical Insurance Cost Prediction
-Project Overview
+**Medical Insurance Cost Prediction**
+**Project Overview**
 This project demonstrates the application of regression techniques to predict medical insurance costs based on patient attributes such as age, BMI, smoking status, and region. By developing a robust predictive model, we can help individuals and insurance providers estimate healthcare expenses more accurately and identify key cost drivers.
-Dataset
+
+**Dataset**
 The dataset contains information on health insurance beneficiaries including:
 
 Age: Age of the primary beneficiary
@@ -12,7 +13,7 @@ Smoker: Smoking status (yes/no)
 Region: Residential area in the US (northeast, southeast, southwest, northwest)
 Charges: Individual medical costs billed by health insurance (target variable)
 
-Methodology
+**Methodology**
 Data Preprocessing and Feature Engineering
 
 Conducted comprehensive exploratory data analysis
@@ -26,7 +27,7 @@ Squared terms for nonlinear relationships
 
 
 
-Model Development
+**Model Development**
 Investigated multiple regression approaches:
 
 Linear Regression (baseline)
@@ -35,14 +36,16 @@ Lasso Regression (L1 regularization)
 Polynomial Regression
 
 Implemented robust cross-validation techniques to ensure reliable model evaluation and hyperparameter tuning.
-Key Findings
-Feature Importance
-Our analysis revealed that smoking status is by far the most significant predictor of insurance costs, followed by the interaction between smoking and BMI, age, and other factors.
+
+**Key Findings**
+**Feature Importance**
+My analysis revealed that smoking status is by far the most significant predictor of insurance costs, followed by the interaction between smoking and BMI, age, and other factors.
 Model Performance
 Ridge Regression provided the best performance with careful hyperparameter tuning, achieving an RMSE of approximately 5378 on validation data and an R² score of 0.82.
 Residual Analysis
 Residual analysis showed some heteroscedasticity, with model predictions being less accurate for very high insurance costs, particularly among smokers.
-Repository Structure
+
+**Repository Structure**
 medical-insurance-prediction/
 │
 ├── DC1.ipynb                  # Main Jupyter notebook with analysis and modeling
@@ -53,7 +56,8 @@ medical-insurance-prediction/
 │   ├── train_data.csv         # Training features
 │   ├── train_labels.csv       # Training target values
 │   └── test_data.csv          # Test features
-Conclusions
+
+**Conclusions**
 This project successfully demonstrates:
 
 The critical impact of smoking status on insurance costs
@@ -70,7 +74,7 @@ Scikit-learn: Machine learning models and evaluation
 Matplotlib & Seaborn: Data visualization
 Google Colab: Development environment
 
-Future Work
+**Future Work**
 
 Explore additional feature transformations for improved model performance
 Implement more advanced regression techniques such as Gradient Boosting
